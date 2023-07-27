@@ -1,0 +1,54 @@
+<title>Login</title>
+
+<div class="Login_page">
+  <form [formGroup]="loginform" (ngSubmit)="onsubmit(loginform.value)" class="form">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="form-inner">
+      <h2>Welcome</h2> 
+      <div class="form-inner_header">Digital Resume!!!!!!!</div> 
+      
+      <div class="content">
+
+        <!-- Name input -->
+          <input class="input" type="text" formControlName="name" id="form3Example1" placeholder="Enter Name" />
+          <!-- error -->
+          <div class="text-danger" *ngIf="submitted && myForm['name'].errors?.['required']">
+            Name is required.
+          </div>
+
+          <!-- Email input -->
+          <input class="input" type="text" id="form3Example2" formControlName="email" placeholder="Gmail" />
+          <!-- error -->
+          <div class="text-danger" *ngIf="submitted && myForm['email'].errors?.['required']">
+            Enter your email.
+          </div>
+          <div class="text-danger" *ngIf="submitted && myForm['email'].errors?.['pattern']">
+            Enter valid email.
+          </div>
+
+          <!-- City input -->
+          <input type="email" id="form3Example3" class="input" formControlName="city" placeholder="City" />
+          <!-- error -->
+          <div class="text-danger" *ngIf="submitted && myForm['city'].errors?.['required']">
+            Enter your City.
+          </div>
+
+            <!-- Phone no input -->
+          <input class="input" type="text" formControlName="phonenumber" placeholder="Phone No" />
+          <div class="text-danger" *ngIf="submitted && myForm['phonenumber'].errors?.['required']">
+            Enter your phone number.
+          </div>
+
+          <!-- Submit button -->
+          <button class="btn btn-primary btn-block" type="submit">
+            Sign up
+          </button>
+
+      </div>
+    </div>
+
+
+  </form>

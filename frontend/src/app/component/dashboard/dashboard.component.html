@@ -1,0 +1,76 @@
+
+
+
+<mat-toolbar class="mat-elevation-z8">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened" mat-mini-fab color="accent"> menu </mat-icon>
+      <mat-icon *ngIf="sidenav.opened" color="accent"> close </mat-icon>
+    </button>
+  
+  
+  <div class="header_name"><span> Digital Resume</span> </div>
+  
+  <div class="profile_name">
+    <span> Ashik Gowda HC</span>
+</div>
+<div class="logout_icon"> <mat-icon  (click)="logout()" matTooltip="Sign Out">exit_to_app</mat-icon> </div>
+
+  </mat-toolbar>
+  
+  
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav"  class="mat-elevation-z8">
+      <button mat-button class="menu-button" routerLink="/dashboard/about">
+        <mat-icon>home</mat-icon>
+        <span>About</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/dashboard/education" >
+        <mat-icon>library_books</mat-icon>
+        <span>Education</span>
+      </button>
+  
+      <button mat-button class="menu-button" routerLink="/dashboard/organization">
+        <mat-icon>work</mat-icon>
+        <span>Organization</span>
+      </button>
+  
+      <button mat-button class="menu-button" routerLink="/dashboard/projects">
+        <mat-icon>local_offer</mat-icon>
+        <span>Projects</span>
+      </button>
+    
+      <button mat-button class="menu-button" routerLink="/dashboard/skills">
+        <mat-icon>info</mat-icon>
+        <span>Skills</span>
+      </button>
+      <mat-divider></mat-divider>
+    
+
+      <button mat-button class="menu-button" routerLink="/dashboard/contact">
+        <mat-icon>perm_contact_calendar</mat-icon>
+        <span>Contact</span>
+      </button>
+  
+      <button mat-button class="menu-button" (click)="download_resume()">
+        <mat-icon matTooltip="Download Resume">cloud_download</mat-icon>
+        <span>Resume</span>
+      </button>
+      
+
+
+
+      <button mat-button class="menu-button" (click)="sidenav.toggle()">
+        <mat-icon>close</mat-icon>
+        <span>Close</span>
+      </button>
+  
+     </mat-sidenav>
+  
+  
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

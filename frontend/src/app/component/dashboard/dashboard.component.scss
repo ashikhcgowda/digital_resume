@@ -1,0 +1,108 @@
+.header_name {
+  letter-spacing: 1px;
+}
+
+.profile_name {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  letter-spacing: 1px;
+  padding-right: 10px;
+}
+
+.download_icon {
+  padding-right: 40px;
+  color: rgb(179, 42, 233);
+  font-size: 30px;
+}
+
+.logout_icon {
+  color: rgb(179, 42, 233);
+  font-size: 30px;
+  transform: rotateZ(180deg);
+}
+
+mat-toolbar {
+  background: black;
+  color: white;
+  width: 100%;
+}
+
+mat-sidenav {
+  margin: 16px;
+  width: 200px;
+  border-right: none;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.content {
+  height: calc(100vh - 98px);
+  border-radius: 10px;
+  margin: 17px;
+  margin-left: 2em;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+
+  mat-icon {
+    margin-right: 8px;
+    color: rgb(184, 56, 78);
+  }
+}
+
+
+.menu-button:hover {
+  background-color: cadetblue;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.mat-sidenav-container {
+  //background: url('https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');
+  background: url('https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30436.jpg?w=360');
+  background-size: cover;
+}
+
+
+@media(max-width:800px) {
+  .profile_name {
+    display: none;
+  }
+
+  .content {
+    height: calc(100vh - 98px);
+    border-radius: 10px;
+    margin: 17px;
+    margin-left: 19px;
+  }
+
+  .logout_icon {
+    font-size: 30px;
+    display: flex;
+    flex: 1;
+    justify-content: first baseline;
+    color: rgb(179, 42, 233);
+    font-size: 30px;
+    transform: rotateZ(180deg);
+  }
+  .menu-button:hover {
+    background-color: cadetblue;
+  }
+}

@@ -1,0 +1,85 @@
+
+
+.header_section
+{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 70px;
+    letter-spacing: 2px;
+    color:lightgrey;
+}
+
+.grid_header
+{
+    color:white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    
+
+.mat-icon
+{
+    margin-right: 10px;
+}
+}
+
+
+.mat-expansion-panel
+{
+    margin-top: 10px;
+    height: fit-content;
+    color: white;
+    background: black;
+}
+
+
+.classroom_categories
+{
+    position: relative;
+    top: 100px;
+    animation: fadeIn 6s;
+}
+
+@keyframes fadeIn
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media (max-width:800px)
+{
+.mat-expansion-panel
+{
+    height: fit-content;
+    width: auto;
+    background-color: black;
+}
+
+.grid_header
+{
+    color: white;
+   
+.mat-icon
+{
+    margin-right: 10px;
+}
+}
+
+.header_section
+{
+    
+    font-size: 27px;
+    margin-top: 60px;
+    letter-spacing: 2px; 
+}
+}
+
+@media (hover:none)
+{
+    .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover{
+        background: black;
+    }
+}
