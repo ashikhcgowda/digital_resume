@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './module/angular-material/angular-material.module';
 import { EducationComponent } from './component/education/education.component';
 import { ProjectsComponent } from './component/projects/projects.component';
-import { NgxOrgChartModule } from 'ngx-org-chart';
+//import { NgxOrgChartModule } from 'ngx-org-chart';
 import { SkillsComponent } from './component/skills/skills.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { ContactComponent } from './component/contact/contact.component';
@@ -38,7 +38,7 @@ import { LoginDialogAlertComponent } from './component/login-dialog-alert/login-
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    NgxOrgChartModule,
+    //NgxOrgChartModule,
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
