@@ -69,8 +69,8 @@ openDialog()
   dialogConfig.disableClose = true;
   this.dialog.open(LoginDialogAlertComponent,
     {
-      height: '150px',
-      width:'380px'
+      height: 'auto',
+      width:'auto'
     })
 }
 
